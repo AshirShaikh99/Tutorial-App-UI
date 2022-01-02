@@ -54,7 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   "Hello!",
                   style: TextStyle(
                     fontSize: 40.0,
-                    fontWeight: FontWeight.w400,
+                    fontFamily: 'Regular',
                   ),
                 ),
               ),
