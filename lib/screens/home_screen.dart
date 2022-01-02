@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tutorial_app_ui/widgets/gif_widgets.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -13,7 +14,6 @@ class _HomeScreenState extends State<HomeScreen> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        extendBodyBehindAppBar: true,
         appBar: AppBar(
           centerTitle: true,
           backgroundColor: Colors.orange,
@@ -47,7 +47,22 @@ class _HomeScreenState extends State<HomeScreen> {
         body: SizedBox(
           height: MediaQuery.of(context).size.height,
           child: Column(
-            children: const [],
+            children: const [
+              Padding(
+                padding: EdgeInsets.only(left: 30.0, top: 30.0),
+                child: Text(
+                  "Hello!",
+                  style: TextStyle(
+                    fontSize: 40.0,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 20.0,
+              ),
+              GIFWidget(),
+            ],
           ),
         ),
       ),
