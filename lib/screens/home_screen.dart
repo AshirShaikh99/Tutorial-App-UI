@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tutorial_app_ui/components//gif_widgets.dart';
+import 'package:tutorial_app_ui/constants.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -53,10 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 padding: EdgeInsets.only(left: 30.0, top: 30.0),
                 child: Text(
                   "Hello!",
-                  style: TextStyle(
-                    fontSize: 40.0,
-                    fontFamily: 'Regular',
-                  ),
+                  style: kTextStyleHeading,
                 ),
               ),
               SizedBox(
