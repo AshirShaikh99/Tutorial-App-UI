@@ -49,19 +49,25 @@ class _HomeScreenState extends State<HomeScreen> {
         body: SizedBox(
           height: MediaQuery.of(context).size.height,
           child: Column(
-            children: const [
-              Padding(
+            children: [
+              Row(
+                children: const [],
+              ),
+              const Padding(
                 padding: EdgeInsets.only(left: 30.0, top: 30.0),
                 child: Text(
-                  "Hello!",
+                  "Hey Ashir,",
                   style: kTextStyleHeading,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20.0,
               ),
-              GIFWidget(),
-              Text("Welcome to the creative learning platform!")
+              const GIFWidget(),
+              const Text(
+                "Best Tutorials",
+                style: kTextStyleHeading,
+              )
             ],
           ),
         ),
