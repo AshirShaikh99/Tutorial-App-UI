@@ -1,11 +1,11 @@
 # Tutorial Application UI
 
-# In this application we will have bunch of tutorials which will teach you very smartly and creatively!
+# In this application we will have a bunch of tutorials which will teach in very interactive way!
 
 # How Application Will Work?
 - Getting Started Screen
 - Home Screen
-- Home Screen with multiple tutorials blocks will navigates towards same screen which is Tutorial Screen just for an example otherwise this application is very wide and broad in terms of features.
+- Home Screen with multiple tutorials blocks will navigates towards same screen which is Tutorial Screen just for an example I have navigated towards same screen otherwise this application is very wide and broad in terms of features.
 - Tutorial Screen
 - Interactive Learning Atmosphere
 
