@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tutorial_app_ui/components//gif_widgets.dart';
+import 'package:tutorial_app_ui/components/block_list.dart';
 import 'package:tutorial_app_ui/components/tutorial_block.dart';
 import 'package:tutorial_app_ui/constants.dart';
 
@@ -75,7 +76,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 "Best Tutorials!",
                 style: kTextStyleHeading,
               ),
-              const TutorialBlock(),
+              const BlockList(),
             ],
           ),
         ),
