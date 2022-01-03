@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tutorial_app_ui/components//gif_widgets.dart';
+import 'package:tutorial_app_ui/components/tutorial_block.dart';
 import 'package:tutorial_app_ui/constants.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -50,24 +51,31 @@ class _HomeScreenState extends State<HomeScreen> {
           height: MediaQuery.of(context).size.height,
           child: Column(
             children: [
-              Row(
-                children: const [],
-              ),
-              const Padding(
-                padding: EdgeInsets.only(left: 30.0, top: 30.0),
-                child: Text(
-                  "Hey Ashir,",
-                  style: kTextStyleHeading,
+              Padding(
+                padding: const EdgeInsets.only(left: 30.0, top: 30.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: const [
+                    Text(
+                      "Hey Ashir,",
+                      style: kTextStyleHeading,
+                    ),
+                    Image(
+                      width: 50.0,
+                      image: AssetImage("assets/images/user.png"),
+                    ),
+                  ],
                 ),
               ),
               const SizedBox(
-                height: 20.0,
+                height: 5.0,
               ),
               const GIFWidget(),
               const Text(
-                "Best Tutorials",
+                "Best Tutorials!",
                 style: kTextStyleHeading,
-              )
+              ),
+              const TutorialBlock(),
             ],
           ),
         ),
