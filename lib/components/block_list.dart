@@ -24,31 +24,51 @@ class BlockList extends StatelessWidget {
                   ),
                 );
               },
-              child: const TutorialBlock(
-                "Networking",
-                "Basics of Internet\nand WEB",
-                Image(
-                  image: AssetImage(
-                    "assets/images/user1.png",
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const TutorialScreen(),
+                    ),
+                  );
+                },
+                child: const TutorialBlock(
+                  "Networking",
+                  "Basics of Internet\nand WEB",
+                  Image(
+                    image: AssetImage(
+                      "assets/images/user1.png",
+                    ),
                   ),
+                  Color(0xffFFE3A8), // Block Color
+                  Color(0xffC9A85E), // Heading Color
+                  Color(0xff735A24), // Text Color
                 ),
-                Color(0xffFFE3A8), // Block Color
-                Color(0xffC9A85E), // Heading Color
-                Color(0xff735A24), // Text Color
               ),
             ),
             const SizedBox(
               height: 10.0,
             ),
-            const TutorialBlock(
-              "Programming",
-              "Basics of HTML\nand CSS",
-              Image(
-                image: AssetImage("assets/images/user2.png"),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const TutorialScreen(),
+                  ),
+                );
+              },
+              child: const TutorialBlock(
+                "Programming",
+                "Basics of HTML\nand CSS",
+                Image(
+                  image: AssetImage("assets/images/user2.png"),
+                ),
+                Color(0xffFFC9E3), // Block Color
+                Color(0xffD364BE), // Heading Color
+                Color(0xff78356E), // Text Color
               ),
-              Color(0xffFFC9E3), // Block Color
-              Color(0xffD364BE), // Heading Color
-              Color(0xff78356E), // Text Color
             ),
             const SizedBox(
               height: 10.0,
