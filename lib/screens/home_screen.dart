@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tutorial_app_ui/widgets/gif_widgets.dart';
+import 'package:tutorial_app_ui/components//gif_widgets.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -23,6 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
             style: TextStyle(
               color: Colors.black,
               fontWeight: FontWeight.w500,
+              fontFamily: 'Regular',
             ),
           ),
           actions: const [
@@ -62,6 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 height: 20.0,
               ),
               GIFWidget(),
+              Text("Welcome to the creative learning platform!")
             ],
           ),
         ),
