@@ -45,8 +45,11 @@ class _GettingStartedState extends State<GettingStarted>
             Center(
               child: Padding(
                 padding: EdgeInsets.only(top: 70.0),
-                child: Image(
-                  image: AssetImage("assets/images/img1.png"),
+                child: Hero(
+                  tag: '1',
+                  child: Image(
+                    image: AssetImage("assets/images/img1.png"),
+                  ),
                 ),
               ),
             ),

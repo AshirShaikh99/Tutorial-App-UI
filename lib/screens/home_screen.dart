@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tutorial_app_ui/components//gif_widgets.dart';
 import 'package:tutorial_app_ui/components/block_list.dart';
-import 'package:tutorial_app_ui/components/tutorial_block.dart';
 import 'package:tutorial_app_ui/constants.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -17,37 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          centerTitle: true,
-          backgroundColor: Colors.orange,
-          elevation: 10.0,
-          title: const Text(
-            "Tutorials!",
-            style: TextStyle(
-              color: Colors.black,
-              fontWeight: FontWeight.w500,
-              fontFamily: 'Regular',
-            ),
-          ),
-          actions: const [
-            Padding(
-              padding: EdgeInsets.only(right: 15.0),
-              child: Icon(
-                Icons.search,
-                color: Colors.black,
-                size: 30.0,
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(right: 20.0),
-              child: Icon(
-                Icons.notifications_none,
-                color: Colors.black,
-                size: 30.0,
-              ),
-            )
-          ],
-        ),
+        appBar: kAppBarStyle,
         body: SizedBox(
           height: MediaQuery.of(context).size.height,
           child: Column(
@@ -61,9 +30,12 @@ class _HomeScreenState extends State<HomeScreen> {
                       "Hey Ashir,",
                       style: kTextStyleHeading,
                     ),
-                    Image(
-                      width: 50.0,
-                      image: AssetImage("assets/images/user.png"),
+                    Hero(
+                      tag: '1',
+                      child: Image(
+                        width: 50.0,
+                        image: AssetImage("assets/images/user.png"),
+                      ),
                     ),
                   ],
                 ),
@@ -74,7 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
               const GIFWidget(),
               const Text(
                 "Best Tutorials!",
-                style: kTextStyleHeading,
+                style: kTextStyleHeading2,
               ),
               const BlockList(),
             ],
