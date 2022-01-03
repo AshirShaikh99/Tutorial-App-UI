@@ -5,7 +5,7 @@
 # How Application Will Work?
 - Getting Started Screen
 - Home Screen
-- Home Screen with multiple tutorials blocks will navigates towards same screen which is Tutorial Screen just for an example I have navigated towards same screen otherwise this application is very wide and broad in terms of features.
+- Home Screen with multiple tutorials blocks will navigates towards same screen which is Tutorial Screen just for an example I have navigated towards same screen otherwise this application is very wide and broad in terms of features
 - Tutorial Screen
 - Interactive Learning Atmosphere
 
