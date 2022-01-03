@@ -1,7 +1,6 @@
 # Tutorial Application UI
 
-# In this application we will have bunch of tutorials which will teach you very smartly and
-creatively!
+# In this application we will have bunch of tutorials which will teach you very smartly and creatively!
 
 # How Application Will Work?
 - Getting Started Screen
